@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url('Oswald-Regular.svg#Oswald-Regular') format('svg'),
+       url('Oswald-Regular.ttf') format('truetype'),
+       url('Oswald-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-VariableFont_wght';
+  src: url('Oswald-VariableFont_wght.eot');
+  src: url('Oswald-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
+       url('Oswald-VariableFont_wght.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
