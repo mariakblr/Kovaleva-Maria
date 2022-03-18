@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+</head>
+<body>
+  <h3>Почему HTML считает, что <font color='#BruceWillis'>«#BruceWillis»</font> и <font color='#CANDY'>«#CANDY»</font>— это цвет?</h3>  
+  <p> Для задания цветов в HTML используются числа в шестнадцатеричном коде 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Все остальные (некорректные) символы будут распознаваться как 0.</p>
+  <p>Например, берем #CANDY <font color="#CANDY">(тут цвет текста #CANDY)</font>. И смотрим как оно читается  #CA0D00 <font color="#CA0D00">(тут цвет текста #CA0D00)</font> </p>
+  <p>Например, берем #BruceWillis <font color="#BruceWillis">(тут цвет текста #BruceWillis)</font>. И смотрим как оно читается: заменяем некореектные символы на 0: B00CE00000, “добиваем” число нулями до количества знаков, делимого на 3 и разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: B00C E000 0000, потом обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат #B0E000   <font color="#B0E000">(тут цвет текста #B0E000)</font> </p>
+</body>
+</html>
