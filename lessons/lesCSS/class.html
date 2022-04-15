@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иерархия классов</title>
+    <style>
+        table{border: 1px solid black; text-align: center;}
+        tr:first-child td:first-child{color: brown;}
+        tr:first-child td:last-child{color: aqua;}
+        tr:nth-child(2) td:first-child{color: red;}
+        tr:nth-child(2) td:last-child{color: yellow;}
+        tr:last-child {color: green;}
+        ul li:first-child p a {color: red;}
+        li span em a{color: green;}
+        ul li:nth-child(3) p a {color: blue;}
+        ul li:last-child a{color: yellow;}
+        p span em {color: violet;}
+        p strong a{color: aqua;}
+        p i a{color: grey;}
+
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <td>Brown</td>
+                    <td>Aqua</td>
+                </tr>
+                <tr>
+                    <td>Red</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+        <li><p><a href="https://www.google.com/search?q=red+color&sxsrf=APq-WBvKESH1h4XJsP92NiBh8bBdIbA_Gw:1650046374073&tbm=isch&source=iu&ictx=1&vet=1&fir=8GW9Eda5iNsSFM%252CYN4iCLvvQo26tM%252C_%253BBLN43Es_dGBCMM%252C4iylckR-wEbCZM%252C_%253Bl9yR4E9KRzUPQM%252CYrgc9FGO2fP3MM%252C_%253B2peog8L1VKflRM%252CKPq43WeJrApapM%252C_%253BJEm1JV8SR8yIsM%252Ck4MWO8xcTRoF_M%252C_%253BbgLD4xT3N8CP1M%252CJoAhX4MVzLlJcM%252C_%253BdLTUvnYFEz_EMM%252CukHfz0JCERs31M%252C_%253B92gGdtLEe31ZpM%252C5UM4SXKy9wRZvM%252C_%253BZbnIgsLrJ8hJGM%252CPiFIo5tm7cYBIM%252C_%253BRzAvT3WjK-I3PM%252CfSpLIm3njc_XIM%252C_%253BN7fq5LcTdl8dHM%252ClbeK-kbgEYRJKM%252C_%253B-VX5Eh2cuDKk6M%252CSYZawahTcrPIpM%252C_%253Bu5tWaN5ieWNL8M%252CrV_xakFhveqhvM%252C_%253BPo8xiLKDu4IHBM%252CwBKgSU9AtSybNM%252C_%253BJaZQ7e63Lc63MM%252CddfdB28J01cVjM%252C_&usg=AI4_-kQ88TGH-NtlLcyJvtw2essyuf4wZg&sa=X&ved=2ahUKEwix9vTf1Zb3AhWRlP0HHYrTCU4Q9QF6BAgEEAE&biw=1366&bih=568&dpr=1#imgrc=8GW9Eda5iNsSFM">Red</a></p></li>
+        <li><span><em><a href="https://www.google.com/search?q=green+color&tbm=isch&ved=2ahUKEwj40Ofk1Zb3AhW-EmMBHRX1Cx4Q2-cCegQIABAA&oq=%D0%BF%D0%BA%D1%83%D1%83%D1%82&gs_lcp=CgNpbWcQARgAMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABAKMgQIABBDOgUIABCABDoICAAQgAQQsQM6CwgAEIAEELEDEIMBOggIABCxAxCDAToJCAAQgAQQChABOggIABAKEAEQGFDVCVizD2D_H2gAcAB4AIABrgGIAf8EkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=sLVZYvi4FL6ljLsPleqv8AE&bih=568&biw=1366">Green</a></em></span></li>
+        <li><p><a href="https://www.google.com/search?q=blue+color&tbm=isch&ved=2ahUKEwiRs7nz15b3AhWBIMUKHQIWBjgQ2-cCegQIABAA&oq=blue+color&gs_lcp=CgNpbWcQAzIECAAQQzIECAAQQzIFCAAQgAQyBAgAEEMyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCCMQ7wMQJzoECAAQEzoICAAQBxAeEBM6BggAEAcQHlC-CFi8DmDnG2gAcAB4AIABjgGIAZkEkgEDMy4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=57dZYtGjN4HBlAaCrJjAAw&bih=568&biw=1366">Blue</a></p></li>
+        <li><a href="">yellow</a></li></ul>
+        <p><span><em>violet</em></span></p>
+    </div>
+    <p> 
+        <strong><a href="">aqua</a></strong>
+        <i> <a href="">grey</a></i></p>
+    <ul></ul>
+</body>
+</html>
