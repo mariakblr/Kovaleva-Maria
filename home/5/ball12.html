@@ -6,25 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ball12</title>
     <style>
-        .box{ background-color: rgb(185, 226, 212); border: 3px solid white; background-image: url(ball3.png)  top no-repeat;}
-        .left{width: 20%; float: left;}
-        .right{float: right; width: 200px; background-color: rgb(238, 238, 124);}
-        .center{background-color: rgb(236, 163, 163); margin-left: 20%; margin-right: 200px;}
-
+        .box{
+        background: 
+        url(ball3.png)  no-repeat bottom left,
+        url(blr.png) no-repeat 20% 100%;
+         background-color: green; border: 3px solid white;
+       }
+        .left{   
+        background: 
+        url(ball3.png) no-repeat,
+        url(ball3.png) no-repeat top right;
+            width: 20%; float: left;}
         
-    
+        .right{float: right; width: 200px;
+        background: 
+        url(ball3.png) no-repeat,
+        url(ball3.png) no-repeat top right;
+            }
+        .center{        background: 
+        url(ball3.png) no-repeat,
+        url(ball3.png) no-repeat top right,
+        url(ball3.png) no-repeat bottom right,
+        url(ball3.png) no-repeat bottom left;
+            background-color: rgb(236, 163, 163); margin-left: 20%; margin-right: 200px;
+        }
+        .v {background: 
+            url(rbr.png) no-repeat bottom right,
+            url(v.png) repeat-y bottom right;}
     </style>
 </head>
 <body>
     <div class="box">
+    <div class="v">
     <div class="left">20% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20% 0% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20% 0% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20% 0% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20%0% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20% 0% 20% 20% 20% 20% 20% 20% 20% 20% 20%20% 20%20% 20%20% 20%20% 20%</div>
     <div class="right"> 200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px200px 200px 200px 200px 200px 200px 200px 200px 200px200px 200px 200px
-        <div style="clear: both;"></div>
     </div>
 
     <div class="center">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контентконтент контент контент контент контент контент контент контент
         <div style="clear: both;"></div>
-    </div>   
+    </div>
+    </div>
     </div>
 </body>
 </html>
