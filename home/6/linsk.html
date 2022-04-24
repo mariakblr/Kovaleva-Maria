@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        ul{list-style-image: url(red.png); padding-left: -2px; float: left;width: 100%;}
+        li{float: left; margin: 10px;}
+        li a {vertical-align: super; color: yellow;}
+        li a:hover {color: blue; background-color: aqua;}
+        td{border-left: red solid 2px; padding: 10px;}
+        td:first-child{border-color: white;}
+        td a:hover {color: rgb(255, 0, 0);}
+        .menu3 {margin: 10px;}
+        .menu3 a {vertical-align: top; color: violet;}
+        div.menu1 div {clear: both;}
+        div.menu3 as:hover {color: red;}
+    </style>
 </head>
 <body>
+    <!-- 1 способ. Ссылки расположены в строку с помощью зафлоченного маркированного списка. Разделители сделаны с помощью стилезации маркеров. Минус в том, что нельзя отдельно отредактировать первый маркер в списке, чтобы убрать черточку. Разделитель с помощью list-style-image не дает возможность изменять размер картинки,т.к. использует оригинальный размер   -->
+    <div class="menu1">
+        <ul>
+            <li><a href="">Ссылка 1</a></li>
+            <li><a href="">Ссылка 2</a></li>
+            <li><a href="">Ссылка 3</a></li>
+            <li><a href="">Ссылка 4</a></li>
+            <li><a href="">Ссылка 5</a></li>
+        </ul>
+        <div></div>
+    </div>
+    <!-- 2й способ. Сделан с помощью таблицы, перегородки - это border-left. Достоинство данного способа в том, что с ним достаточно просто выполнить это задание, недостаток - не получится сделать адаптивность -->
+    <div class="menu2">
+        <table>
+            <tr>
+            <td><a href="">Ссылка 1</a></td>
+            <td><a href="">Ссылка 2</a></td>
+            <td><a href="">Ссылка 3</a></td>
+            <td><a href="">Ссылка 4</a></td>
+            <td><a href="">Ссылка 5</a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- 3й способ. Перегородки сделаны с помощью вставленной картинти,а ссылки высталены в строку путем вставки ссылок без переноса на следующую строчку -->
+    <div class="menu3">
+    <a href="">Ссылка 1</a>
+    <img src="red.png" alt="">    <a href="">Ссылка 2</a>
+    <img src="red.png" alt="">    <a href="">Ссылка 3</a>
+    <img src="red.png" alt="">    <a href="">Ссылка 4</a>
+    <img src="red.png" alt="">    <a href="">Ссылка 5</a>
+    </div>
+    
     
 </body>
 </html>
