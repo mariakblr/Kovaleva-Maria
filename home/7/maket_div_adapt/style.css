@@ -1,0 +1,20 @@
+* {margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+div.header,div.footer{background: rgb(160, 160, 218); text-align: center; text-transform: uppercase; color: blue; padding: 20px;}
+div:nth-child(2),div.menu{background-color: yellow;}
+div.menu{width: 140px; float: left; text-align: center; padding: 10px; margin: 10px 0px;}
+ul{margin-top: 10px; padding-inline-start: 30px;text-align: left;}
+div.content{margin-left: 160px; background-color : white;}
+div.balls{background: url(ball.gif) right repeat-y;}
+div.balls h3{margin: 0px; padding-top: 20px; padding-left: 30px; text-align: center;}
+img{float: left; margin: 20px; width: 250px;}
+div.balls p{padding: 20px;}
+
+@media screen and (min-width: 1920px) {div:nth-child(2){max-width: 1920px; margin: auto;}} 
+   
+@media screen and (max-width: 800px) and (min-width: 400px) {
+div.balls p{text-align: center;}
+img{float: none; width: 100%; margin: 0; padding: 20px 50px; }}
+@media screen and (max-width: 600px) {div.menu,img{float: none; margin-top: 0px; width: 100%;} div.content {margin-left: 0px;} ul{text-align: center;padding-inline-start: 0px;}}
+
