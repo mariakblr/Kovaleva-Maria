@@ -5,21 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <style>form{margin: 20px;}</style>
+    <style>
+        .border{border: double red; box-sizing: border-box; padding: 20px;}
+    </style>
 </head>
 <body>
-    <form action="https://fe.it-academy.by/TestForm.php" method="get">
-        Фамилия:
-        <input type="text" name="lastname"><br>
-        Имя:
-        <input type="text" name="firstname"><br>
-        Отчество:
-        <input type="text" name="fathername"><br>
-        E-mail для связи:
-        <input type="email" name="email"><br>
-        Согласен с правилами сайта:
-        <input type="checkbox" name="rulesagree"><br>
-        <input type="submit" value="Регистарция">
-    </form>
+  <div class="border">
+      <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p><br>
+      <form action="https://fe.it-academy.by/TestForm.php" method="get">
+          Название статьи:
+          <input type="text" name="Name"><br>
+          Рубрика:
+          <select name="Theme">
+              <option value="1">Программирование</option>
+              <option value="2">Спорт</option>
+              <option value="3">Здоровье</option>
+              <option value="4">Бизнес</option>
+            </select><br>
+            Публикация:
+            <input type="radio" name="Place" value="1">на сайте
+            <input type="radio" name="Place" value="2">в журнале
+            <input type="radio" name="Place" value="3">на сайте и в журнале<br>
+            Разрешить комментарии: <input type="checkbox" name="commentsyes" checked><br>
+            Текст статьи: <br>
+            <input type="text" name="Text"><br>
+            <input type="submit" value="Опубликовать">
+        </form>
+
+
+
+
+
+
+  </div>  
 </body>
 </html>
