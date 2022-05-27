@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        .border{border: double red; box-sizing: border-box; padding: 20px;}
+        * {margin: 0px;
+        padding: 0px;}
+        p{float: left;}
+        .border{box-sizing: border-box; padding: 20px;}
+        [name=Name]{float: right; width: 100%; margin-left: 30px;}
+        [name=Theme] { margin-left: 90px;}
     </style>
 </head>
 <body>
   <div class="border">
       <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p><br>
       <form action="https://fe.it-academy.by/TestForm.php" method="get">
-          Название статьи:
-          <input type="text" name="Name"><br>
-          Рубрика:
+          <div><p>Название статьи:<p> 
+        <input type="text" name="Name"><br></div>
+          <p>Рубрика:</p>
           <select name="Theme">
               <option value="1">Программирование</option>
               <option value="2">Спорт</option>
               <option value="3">Здоровье</option>
               <option value="4">Бизнес</option>
             </select><br>
-            Публикация:
+           <p>Публикация:</p>
             <input type="radio" name="Place" value="1">на сайте
             <input type="radio" name="Place" value="2">в журнале
             <input type="radio" name="Place" value="3">на сайте и в журнале<br>
-            Разрешить комментарии: <input type="checkbox" name="commentsyes" checked><br>
-            Текст статьи: <br>
+           <p>Разрешить комментарии:</p> <input type="checkbox" name="commentsyes" checked><br>
+            <p>Текст статьи:</p> <br>
             <input type="text" name="Text"><br>
             <input type="submit" value="Опубликовать">
         </form>
