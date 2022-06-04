@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 15;
+
+        var c = 20;
+        var d = 35;
+
+        calc(a,b,"+");
+        calc(c,d,"*");
+        calc(155,20,"-")
+
+        var result = calc(18,15,'*')
+
+        // function calc(a, b, operation){
+        //     switch(operation){
+        //         case "+": return a+b; 
+        //         case "-": return a-b; 
+        //         case "*": return a*b; 
+        //         case "/": return a/b; }}
+
+
+        function calc(a, b, operation){
+            switch(operation){
+                case "+": console.log(a+b); break; 
+                // брейк нужен для того чтобы остановить отработку последующих
+                case "-": console.log(a-b); break;
+                case "*": console.log(a*b); break;
+                case "/": console.log(a/b); break;
+
+            }
+        }
+
+     
+        
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500&display=swap');
+@import 'variables';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+body{
+    height: 11210px;
+    font-family: 'Forum', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.container{
+    height: 100%;
+    width: $xxl;;
+    margin: 0 auto;
+}
+a{color: inherit;
+text-decoration: none;}
+li{
+    list-style-type: none;
+}
+//header
+.header{
+    background-color: $bgdark;
+    height: 150px;
+    .container{
+    display: flex;
+        img{margin-top: 62px ;}
+    justify-content: space-between;
+        .menu{display: flex;
+            li{margin: 62px 0px 55px 65px;
+            a{ font-size: $fz;
+                color: $white;
+                &hover{ color: $hover;}
+            }
+            }
+        }
+    }
+}
+.banner {height: 842px;
+ background-color: $bgdark;
+    .container{ display: flex;
+        justify-content: space-between;
+        position: relative;
+            .name{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                color: $white;
+                h1{
+                font-family: 'Forum';
+                font-weight: 400;
+                font-size: $fz80;
+                position: relative;
+                top: 150px;
+                z-index: 1;
+                order: 1;
+                margin-right: -160px;
+                letter-spacing: 5px;
+                span{
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: $fz28;
+                    line-height: 2px;
+                    }}}}}
+                .button{                
+                    width: 360px;
+                    height: 75px;
+                    background-color: $red;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 26px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 495px;
+                    left: 0px;
+                    border-radius: 10px;
+                    display: flex;
+        div [alt=banner]{position: absolute; right: 0px;
+    z-index: 0;}}
+.pages {
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    right: 0px;
+    bottom: 0px;
+    background-color: $bgdark;
+color: white;}
